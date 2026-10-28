@@ -1,5 +1,7 @@
-meu-jogo/
+meu-rpg/
 ├── index.html
-├── style.css
-└── game.js
-Versão beta
+├── README.md
+└── src/
+    ├── main.js
+    └── scenes/
+        └── HouseScene.js
