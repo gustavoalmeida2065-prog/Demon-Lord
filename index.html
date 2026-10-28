@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu RPG</title>
+
+  <title>Meu RPG — Aventura</title>
 
   <style>
     * {
@@ -15,9 +17,9 @@
       padding: 0;
       width: 100%;
       min-height: 100%;
-      background: #171717;
-      color: #f5f5f5;
-      font-family: system-ui, sans-serif;
+      background: #17130f;
+      color: #f0d5a0;
+      font-family: Georgia, serif;
     }
 
     body {
@@ -28,38 +30,49 @@
     }
 
     h1 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       margin: 8px 0;
+      text-align: center;
+      color: #e6c58a;
     }
 
     p {
       margin: 4px 0 12px;
       text-align: center;
-      color: #d4d4d4;
+      color: #cbb99b;
+      font-size: 0.95rem;
     }
 
     #game {
       width: min(100%, 800px);
       display: flex;
       justify-content: center;
+      align-items: center;
     }
 
     #game canvas {
+      display: block;
       max-width: 100%;
       height: auto !important;
-      border: 2px solid #525252;
-      border-radius: 6px;
+      border: 2px solid #795438;
+      border-radius: 4px;
       image-rendering: pixelated;
     }
   </style>
 </head>
 
 <body>
-  <h1>Meu RPG — Protótipo</h1>
+  <h1>Meu RPG — Aventura</h1>
 
-  <p>Movimente o personagem com as setas do teclado ou WASD.</p>
+  <p>Explore a casa usando as setas do teclado ou WASD.</p>
 
   <div id="game"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
+```
 
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
   <script type="module" src="./src/main.js"></script>
